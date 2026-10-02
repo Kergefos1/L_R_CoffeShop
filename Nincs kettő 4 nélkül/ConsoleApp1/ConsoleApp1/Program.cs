@@ -8,6 +8,7 @@ Console.WriteLine("Hello, World!");
 Drink drink = new Drink("almalé", 1200, false, false);
 Drink drink2 = new Drink("almalé", 1200, true, true);
 
+
 Console.WriteLine(drink.Describe());
 
 Console.WriteLine(drink2.Describe());
@@ -24,3 +25,10 @@ Console.WriteLine(costumer2.Name);
 costumer1.HasDiscount();
 costumer2.HasDiscount();
 
+Menu menu1 = new Menu();
+Drink drink3 = new Drink("almalé", 1200, true, true);
+
+menu1.AddDrink(drink);
+menu1.AddDrink(drink2);
+menu1.DeCaf();
+menu1.AvragePrice();
